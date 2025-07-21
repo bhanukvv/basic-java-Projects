@@ -1,4 +1,4 @@
-# ☕ Beginner Java Projects – Learn Java from Zero
+# ☕ Beginner Java Projects   Learn Java from Zero
 
 Welcome to this Java learning repository made especially for **absolute beginners** 
 If you are just starting your Java journey and looking for small.. hands on projects that help you **understand both code and theory**,you r in the right place.  
