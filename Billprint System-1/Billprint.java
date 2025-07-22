@@ -37,7 +37,7 @@ class Billprint{
 	Double Soapprice=160.00;
 
 
-//// Getting info 
+// Getting info 
 		System.out.print("Basmathi Qty(Kg)         - " );
 	Double BasmathiQty=scanner.nextDouble();
 
