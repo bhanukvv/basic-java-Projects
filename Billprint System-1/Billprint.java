@@ -127,6 +127,92 @@ class Billprint{
 		System.out.printf("%s %42s %23S %26s\n", "|","|","|","|");
 		System.out.println("+------------------------------------------+-----------------------+--------------------------+");
 
+//Calculates change
+		int cash;
+		System.out.print("Enter custemor given amount : ");
+		cash=scanner.nextInt();
+		int change;
+		change=(int)(cash - (Total - Discount));
+		System.out.println();
+
+//summary table net amount,cash,change
+
+		System.out.println("+---------------------+---------------+");
+		System.out.printf("| %-20s | %-13s |\n", "net amount", Total-Discount);
+		System.out.println("+---------------------+---------------+");
+		System.out.printf("| %-20s | %-13.2f |\n", "cash", (double)cash);
+		System.out.println("+---------------------+---------------+");
+		System.out.printf("| %-20s | %-13.2f |\n", "change", (double)change);
+		System.out.println("+---------------------+---------------+");
+		System.out.println();
+
+//notes and coins
+
+		int notes5000, notes2000, notes1000, notes500, notes100, notes50, notes20;
+		int coins10, coins5, coins2, coins1;
+	        int remainingbalance;		
+		notes5000 = change / 5000;
+		remainingbalance = change % 5000;
+        	notes2000 = remainingbalance / 2000;
+        	remainingbalance = remainingbalance % 2000;
+        	notes1000 = remainingbalance / 1000;
+        	remainingbalance = remainingbalance % 1000;
+        	notes500 = remainingbalance / 500;
+        	remainingbalance = remainingbalance % 500;
+        	notes100 = remainingbalance / 100;
+        	remainingbalance = remainingbalance % 100;
+        	notes50 = remainingbalance / 50;
+        	remainingbalance = remainingbalance % 50;
+        	notes20 = remainingbalance / 20;
+        	remainingbalance = remainingbalance % 20;
+        	coins10 = remainingbalance / 10;
+        	remainingbalance = remainingbalance % 10;
+        	coins5 = remainingbalance / 5;
+        	remainingbalance = remainingbalance % 5;
+        	coins2 = remainingbalance / 2;
+        	remainingbalance = remainingbalance % 2;
+		coins1 = remainingbalance / 1;
+        	remainingbalance = remainingbalance % 1;
+		int totalNotes = notes5000 + notes2000 + notes1000 + notes500 + notes100 + notes50 + notes20;
+        	int totalCoins = coins10 + coins5 + coins2 + coins1;
+
+//notes and coins table
+		
+		 System.out.println("+---------------------+---------------+");
+                 System.out.printf("| %-20s| %-14s|\n", "value", "No");
+       		 System.out.println("+---------------------+---------------+");
+      		  System.out.printf("| %-20s| %-14d|\n", "Rs.5000", notes5000);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.2000", notes2000);
+       		 System.out.println("|---------------------|---------------|");
+        	System.out.printf("| %-20s| %-14d|\n", "Rs.1000", notes1000);
+       		 System.out.println("|---------------------|---------------|");
+      		 System.out.printf("| %-20s| %-14d|\n", "Rs.500", notes500);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.100", notes100);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.50", notes50);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.20", notes20);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.10", coins10);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.5", coins5);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.2", coins2);
+       		 System.out.println("|---------------------|---------------|");
+       		 System.out.printf("| %-20s| %-14d|\n", "Rs.1", coins1);
+       		 System.out.println("+---------------------+---------------+");
+       		 System.out.printf("| %-20s| %-14d|\n", "No of Notes", totalNotes);
+       		 System.out.println("+---------------------+---------------+");
+        	System.out.printf("| %-20s| %-14d|\n", "No of Coins", totalCoins);
+      		  System.out.println("+---------------------+---------------+");
+//thank you msg
+		System.out.println("\n\n---------------------------------------");
+		System.out.println("  THANK YOU FOR SHOPPING WITH US !!!");
+		System.out.println("---------------------------------------");
+
+
 		}
 }
 
