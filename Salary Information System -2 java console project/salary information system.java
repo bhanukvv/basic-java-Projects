@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Assignment04 {
+class salaryinformationsystem {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         System.out.println("---------------------------------------------------------------------------");
