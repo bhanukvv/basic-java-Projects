@@ -75,3 +75,77 @@ class salary information system {
 			}
 			System.out.printf("Annual Bonus  :%.2f",annualbonus);
 		}
+f(number==3){
+			System.out.println("---------------------------------------------------------------------------");
+			System.out.println("|                          Calculate Loan Amount  !                       |");
+			System.out.println("---------------------------------------------------------------------------");
+			System.out.println();
+			
+			
+			System.out.print("\nInput Employee name     - ");
+            String name = input.nextLine();
+            
+			Double salary;
+            System.out.print("Input Employee Salary   -  ");
+            salary = input.nextDouble();
+            int years;
+            System.out.print("Number of the years for the loan(1,2,3,4,5) : ");
+            years=input.nextInt();
+            int n = years * 12;
+        double monthlyinstallment = salary * 0.6;
+        double monthlyinterestrate = 15 / 100.0 / 12;  
+
+        double loanamount = 0;
+
+        if (salary <= 50000) {
+            System.out.println("You can not get a loan because your salary is less than Rs.50,000");
+        } else if (years > 5) {
+            System.out.println("You can only get a loan for up to 5 years");
+        } else if (salary > 50000 && years <= 5) {
+            if (n == 12) {
+                loanamount = monthlyinstallment * (1 - (1 / (
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125))) / 0.0125;
+            } else if (n == 24) {
+                loanamount = monthlyinstallment * (1 - (1 / (
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125))) / 0.0125;
+            } else if (n == 36) {
+                loanamount = monthlyinstallment * (1 - (1 / (
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125))) / 0.0125;
+            } else if (n == 48) {
+                loanamount = monthlyinstallment * (1 - (1 / (
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125))) / 0.0125;
+            } else if (n == 60) {
+                loanamount = monthlyinstallment * (1 - (1 / (
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 *
+                    1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125 * 1.0125))) / 0.0125;
+            }
+
+            
+            int rloanamount = ((int)(loanamount + 500) / 1000) * 1000;
+            System.out.println("You can get Loan Amount : " + rloanamount);
+	     	}
+        }
+    }
+}
