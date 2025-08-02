@@ -46,3 +46,32 @@ class salary information system {
             }
             System.out.printf("You have to pay Income Tax per Month : %.0f ",incometax);
         }
+}if(number==2){
+			System.out.println("---------------------------------------------------------------------------");
+			System.out.println("|                          Calculate Annual  Bonus !                      |");
+			System.out.println("---------------------------------------------------------------------------");
+			
+			System.out.println();
+			
+			
+			System.out.print("\nInput Employee name     - ");
+            String name = input.nextLine();
+            
+			Double salary;
+            System.out.print("Input Employee Salary   -  ");
+            salary = input.nextDouble();
+            
+			Double annualbonus;
+			if (salary<100000){
+				annualbonus=5000.00;
+			}else if(salary>100 && salary<=199999){
+				annualbonus=salary*0.1;
+			}else if(salary>=200000 && salary<=299999){
+				annualbonus=salary*0.15;
+			}else if(salary>=300000 && salary<=399999){
+				annualbonus=salary*0.2;
+			}else{
+				annualbonus=salary*0.35;
+			}
+			System.out.printf("Annual Bonus  :%.2f",annualbonus);
+		}
