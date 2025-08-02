@@ -1,6 +1,6 @@
 import java.util.*;
 
-class salary information system {
+class Assignment04 {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
         System.out.println("---------------------------------------------------------------------------");
@@ -29,24 +29,24 @@ class salary information system {
 
             System.out.print("Input Employee Salary   -  ");
             salary = input.nextDouble();
-
+            
             System.out.println();
-
+            
             double incometax;
             if(salary>100000 && salary<=141667){
-                incometax=(salary-100000)*0.06;
-            }else if(salary>141667 && salary<=183333){
-                incometax=41667*0.06+(salary-141667)*0.12;
-            }else if(salary>183333 && salary<=225000){
-                incometax=41667*0.06+41667*0.12+(salary-183333)*0.18;
-            }else if(salary>225000 && salary<=266667){
-                incometax=(41667*0.06+41667*0.12+41667*0.18)+(salary-225000)*0.24;
-            }else{
-                incometax=(41667*0.6+41667*0.12+41667*0.18+41667*0.24)+(salary-266667)*0.3;
-            }
-            System.out.printf("You have to pay Income Tax per Month : %.0f ",incometax);
-        }
-}if(number==2){
+				incometax=(salary-100000)*0.06;
+			}else if(salary>141667 && salary<=183333){
+				incometax=41667*0.06+(salary-141667)*0.12;
+			}else if(salary>183333 && salary<=225000){
+				incometax=41667*0.06+41667*0.12+(salary-183333)*0.18;
+			}else if(salary>225000 && salary<=266667){
+				incometax=(41667*0.06+41667*0.12+41667*0.18)+(salary-225000)*0.24;
+			}else{
+				incometax=(41667*0.6+41667*0.12+41667*0.18+41667*0.24)+(salary-266667)*0.3;
+			}
+			System.out.printf("You have to pay Income Tax per Month : %.0f ",incometax);
+		}
+		if(number==2){
 			System.out.println("---------------------------------------------------------------------------");
 			System.out.println("|                          Calculate Annual  Bonus !                      |");
 			System.out.println("---------------------------------------------------------------------------");
@@ -75,7 +75,7 @@ class salary information system {
 			}
 			System.out.printf("Annual Bonus  :%.2f",annualbonus);
 		}
-f(number==3){
+		if(number==3){
 			System.out.println("---------------------------------------------------------------------------");
 			System.out.println("|                          Calculate Loan Amount  !                       |");
 			System.out.println("---------------------------------------------------------------------------");
