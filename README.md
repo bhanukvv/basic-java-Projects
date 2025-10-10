@@ -31,3 +31,4 @@ Each project will be:
 ## 💰Billprint (Console Billing System)
 ## 💼 Salary Information System (Java Console Project)        
 ## 🧮 Number Converter (java Console project)
+## 💼 Tax Calculater (console project)
